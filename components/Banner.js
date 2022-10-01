@@ -44,7 +44,6 @@ const Banner = () => {
     <div>
       <div className="flex justify-between text-white [&>*]:relative">
         <div
-          //   className="transition-all duration-500"
           id="strength"
           onMouseEnter={() => {
             setStrength(true);
@@ -69,14 +68,12 @@ const Banner = () => {
           ) : null}
         </div>
         <div
-          //   className="transition-all duration-500"
           id="yoga"
           onMouseEnter={() => {
             setYoga(true);
             setStrength(false);
             setDrills(false);
           }}
-          //   onMouseLeave={() => {}}
         >
           <img
             src="/mobility-pic.jpg"
@@ -95,7 +92,6 @@ const Banner = () => {
           ) : null}
         </div>
         <div
-          //   className="transition-all duration-500"
           id="drills"
           onMouseEnter={() => {
             setDrills(true);
