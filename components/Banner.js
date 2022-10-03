@@ -42,8 +42,9 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="flex justify-between text-white [&>*]:relative">
+      <div className="flex items-stretch h-full justify-between text-white [&>*]:relative">
         <div
+          className="overflow-hidden transition-all ease-in-out duration-500"
           id="strength"
           onMouseEnter={() => {
             setStrength(true);
@@ -54,7 +55,7 @@ const Banner = () => {
           <img
             src="/strength-pic.jpg"
             alt="Strength Training pic"
-            className="w-full object-cover h-full brightness-50 rounded-l-xl"
+            className="w-full object-cover min-h-[65vh] brightness-50 rounded-l-xl"
           />
           <span className="absolute top-6 left-10 uppercase font-medium text-xl">
             Strength
@@ -68,6 +69,7 @@ const Banner = () => {
           ) : null}
         </div>
         <div
+          className="overflow-hidden transition-all ease-in-out duration-500"
           id="yoga"
           onMouseEnter={() => {
             setYoga(true);
@@ -78,7 +80,7 @@ const Banner = () => {
           <img
             src="/mobility-pic.jpg"
             alt="Yoga pose pic"
-            className="w-full object-cover h-full brightness-50"
+            className="w-full object-cover min-h-[65vh] brightness-50"
           />
           <span className="absolute top-6 left-10 uppercase font-medium text-xl">
             Mobility
@@ -92,6 +94,7 @@ const Banner = () => {
           ) : null}
         </div>
         <div
+          className="overflow-hidden transition-all ease-in-out duration-500"
           id="drills"
           onMouseEnter={() => {
             setDrills(true);
@@ -102,7 +105,7 @@ const Banner = () => {
           <img
             src="/drills-pic.jpg"
             alt="Exercise drills pic"
-            className="w-full object-cover h-full brightness-50 rounded-r-xl"
+            className="w-full object-cover min-h-[65vh] brightness-50 rounded-r-xl"
           />
           <span className="absolute top-6 left-10 uppercase font-medium text-xl">
             Drills
